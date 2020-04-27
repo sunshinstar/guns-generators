@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="miaodi.dao.ReverseGatewayMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="miaodi.model.ReverseGateway">
+        <id column="ID" property="id" />
+        <result column="CHANNEL_ID" property="channelId" />
+        <result column="BIND_IP" property="bindIp" />
+        <result column="BIND_PORT" property="bindPort" />
+        <result column="GMT_CREATE" property="gmtCreate" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="GMT_MODIFY" property="gmtModify" />
+        <result column="MODIFY_USER_ID" property="modifyUserId" />
+        <result column="MEMO" property="memo" />
+        <result column="DELETED" property="deleted" />
+        <result column="STATUS" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, CHANNEL_ID, BIND_IP, BIND_PORT, GMT_CREATE, CREATE_USER_ID, GMT_MODIFY, MODIFY_USER_ID, MEMO, DELETED, STATUS
+    </sql>
+
+</mapper>
